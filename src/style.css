@@ -1,0 +1,467 @@
+/* style.css */
+
+/* Gaya umum untuk seluruh aplikasi */
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* style.css */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background-color: #007bff;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+/* Tambahan untuk layout aplikasi */
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Detail Surat */
+.lihat-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(236, 153, 153, 0.1);
+  margin-bottom: 20px;
+}
+
+.lihat-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.surat-detail {
+  margin-bottom: 20px;
+}
+
+.isi-surat {
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Arsip */
+.arsip-container {
+  display: flex;
+  justify-content: flex-start; /* Memulai konten dari sisi kiri */
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh;
+  padding: 20px;
+}
+
+.arsip-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(236, 153, 153, 0.1);
+  width: calc(100vw - 260px); /* Adjust as per your sidebar width */
+  max-width: 100%;
+  margin-left: 20px; /* Menggeser konten ke kiri */
+  overflow-y: auto;
+}
+
+.arsip-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Added margin bottom */
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.aksi-buttons button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.aksi-buttons button:hover {
+  background-color: #218838;
+}
+
+.aksi-buttons button:last-child {
+  background-color: #dc3545;
+}
+
+.aksi-buttons button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Arsipkan */
+.arsipkan-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(236, 153, 153, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.arsipkan-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-row label {
+  flex: 1;
+  margin-right: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.form-row input[type="text"],
+.form-row select,
+.file-input-wrapper .file-name-display {
+  flex: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.file-input-wrapper input[type="file"] {
+  display: none;
+}
+
+.file-input-wrapper button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-input-wrapper button:hover {
+  background-color: #0056b3;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .arsip-form {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .arsip-form input[type="text"],
+  .arsip-form select,
+  .arsip-form input[type="file"] {
+    width: 100%;
+  }
+}
+
+/* Gaya untuk form Tambah Kategori */
+.tambah-kategori-container {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.tambah-kategori-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.alert {
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #fff;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 150px;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar li:hover {
+  background-color: #2d2d2d;
+}
+
+.sidebar .footer {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: gray;
+}
+
+/* Tambahan untuk layout aplikasi */
+.app {
+  display: flex;
+  flex-direction: column; /* Menata konten dan Navbar dalam kolom */
+}
+
+.flex {
+  display: flex; /* Menata Sidebar dan konten dalam baris */
+}
+
+.sidebar {
+  width: 250px; /* Atur lebar Sidebar */
+  background-color: #333; /* Warna latar belakang Sidebar */
+  color: #fff; /* Warna teks Sidebar */
+}
+
+.content {
+  flex: 1; /* Konten akan mengambil sisa ruang yang tersedia */
+  padding: 20px; /* Padding untuk konten */
+}
